@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "exiled-shells",
+  "version": "${version}",
+  "name": "Exiled Shells",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/exiled-shells/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.akselglyholt.exiledShells.client.ExiledShellsDataGenerator"
+    ],
+    "main": [
+      "com.akselglyholt.exiledShells.ExiledShells"
+    ]
+  },
+  "mixins": [
+    "exiled-shells.mixins.json",
+    {
+      "config": "exiled-shells.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
