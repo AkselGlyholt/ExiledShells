@@ -24,15 +24,15 @@ public class ExiledShells implements ModInitializer {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
             if (!source.isBuiltin()) return;
 
-            addShulkerShell(key, tableBuilder, BuiltInLootTables.SIMPLE_DUNGEON,                     1, 9,  1, 1);   // ~10%, always 1
-            addShulkerShell(key, tableBuilder, BuiltInLootTables.ABANDONED_MINESHAFT,                1, 17, 1, 1);   // ~5%, always 1
-            addShulkerShell(key, tableBuilder, BuiltInLootTables.ANCIENT_CITY,                       1, 4,  1, 3);   // ~20%, 1-3 (2-3 rare)
-            addShulkerShell(key, tableBuilder, BuiltInLootTables.BASTION_TREASURE,                   1, 4,  1, 2);   // ~20%, always 1
-            addShulkerShell(key, tableBuilder, BuiltInLootTables.DESERT_PYRAMID,                     1, 9,  1, 1);   // ~10%, always 1
-            addShulkerShell(key, tableBuilder, BuiltInLootTables.RUINED_PORTAL,                      1, 14, 1, 1);   // ~6.7%, always 1
-            addShulkerShell(key, tableBuilder, BuiltInLootTables.WOODLAND_MANSION,                   1, 6,  1, 2);   // ~14%, rarely 2
-            addShulkerShell(key, tableBuilder, BuiltInLootTables.TRIAL_CHAMBERS_REWARD_OMINOUS_COMMON,1, 4,  1, 2);   // ~20%, rarely 2
-            addShulkerShell(key, tableBuilder, BuiltInLootTables.TRIAL_CHAMBERS_REWARD_RARE,         1, 7,  1, 1);   // ~14%, always 1
+            addShulkerShell(key, tableBuilder, BuiltInLootTables.SIMPLE_DUNGEON,                     1, 6,  1, 1);   // ~14%, always 1
+            addShulkerShell(key, tableBuilder, BuiltInLootTables.ABANDONED_MINESHAFT,                1, 9,  1, 1);   // ~10%, always 1
+            addShulkerShell(key, tableBuilder, BuiltInLootTables.ANCIENT_CITY,                       1, 1,  2, 4);   // 50%, 2-4
+            addShulkerShell(key, tableBuilder, BuiltInLootTables.BASTION_TREASURE,                   2, 3,  2, 3);   // 40%, 2-3
+            addShulkerShell(key, tableBuilder, BuiltInLootTables.DESERT_PYRAMID,                     1, 6,  1, 1);   // ~14%, always 1
+            addShulkerShell(key, tableBuilder, BuiltInLootTables.RUINED_PORTAL,                      1, 9,  1, 1);   // ~10%, always 1
+            addShulkerShell(key, tableBuilder, BuiltInLootTables.WOODLAND_MANSION,                   1, 3,  1, 2);   // 25%, 1-2
+            addShulkerShell(key, tableBuilder, BuiltInLootTables.TRIAL_CHAMBERS_REWARD_OMINOUS_COMMON,1, 2,  1, 2);   // ~33%, 1-2
+            addShulkerShell(key, tableBuilder, BuiltInLootTables.TRIAL_CHAMBERS_REWARD_RARE,         1, 4,  1, 1);   // 20%, always 1
         });
     }
 
